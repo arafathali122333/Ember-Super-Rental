@@ -1,7 +1,14 @@
 # super-rental
+* [Webapp Link](https://super-rental-ember.netlify.app/)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+![Screenshot (140)](https://user-images.githubusercontent.com/60483672/180839683-48ca23f4-3866-45b0-9ccb-47093fac5dc4.png)
+
+##Add Some Features:
+* Add Rentals
+* Add/Remove Rentals from Favourite Lists
+
+##References
+* [for References](https://guides.emberjs.com/release/tutorial/part-1/)
 
 ## Prerequisites
 
