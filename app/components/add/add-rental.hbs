@@ -1,0 +1,24 @@
+<div class="open-button-parent">
+    <button class="open-button" type="button" {{on "click" this.openForm}}>Add Rental 😊</button>
+</div>
+
+<div class= {{if this.viewOrHide "form-popup" 'hide'}}>
+  <div class="form-container">
+    <Input @value={{this.title}} placeholder="Title"/>
+    <Input @value={{this.ownerName}} placeholder="Owner Name"/>
+    <Input @value={{this.city}} placeholder="City"/>
+    <Input @value={{this.desc}} placeholder="Description"/>
+    <Input @value={{this.lat}} @type="number" placeholder="Location:lat"/>
+    <Input @value={{this.lon}} @type="number" placeholder="Location:lon"/>
+    <Input @value={{this.noOfBedrooms}} @type="number" placeholder="No of bedrooms"/>
+
+    <Input @type="radio" {{on "change" this.val1}} id="estate" name="category" />
+    <label for="estate">Estate</label>
+    <Input @type="radio" {{on "change" this.val2}} id="condo" name="category"/>
+    <label for="condo">Condo</label> 
+    <Input @type="file" {{on "change" this.uploadFile}} accept="image/*"/>
+
+    <button class="btn" {{on "click" this.submitForm}} type="button">Add Rental</button>
+    <button class="btn cancel" {{on "click" this.closeForm}} type="button">Close</button>
+  </div>
+</div>

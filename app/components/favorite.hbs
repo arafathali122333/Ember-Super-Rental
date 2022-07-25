@@ -1,0 +1,7 @@
+<ul class="results">
+<div class="favoriteBar">{{if this.fav.length "" "No one Found"}}</div>
+
+{{#each this.fav as |rental|}}
+    <li> <Rental @rental={{rental}} /> </li>
+{{/each}}
+</ul>
